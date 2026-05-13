@@ -1,0 +1,110 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'name' => 'Kids Platform',
+    'base_url' => '/',
+    'demo' => [
+        'users' => [
+            [
+                'id' => 1,
+                'name' => 'Ana Responsavel',
+                'email' => 'parent@kids.local',
+                'password' => '123456',
+                'role' => 'parent',
+                'avatar' => 'AR',
+            ],
+            [
+                'id' => 2,
+                'name' => 'Equipe Administrativa',
+                'email' => 'admin@kids.local',
+                'password' => '123456',
+                'role' => 'admin',
+                'avatar' => 'AD',
+            ],
+        ],
+        'children' => [
+            [
+                'id' => 1,
+                'name' => 'Luna',
+                'birth_date' => '2019-04-10',
+                'gender' => 'female',
+                'level' => 4,
+                'experience_points' => 320,
+                'stars' => 18,
+                'coins' => 140,
+                'favorite_game' => 'Memoria Infantil',
+            ],
+            [
+                'id' => 2,
+                'name' => 'Theo',
+                'birth_date' => '2018-11-22',
+                'gender' => 'male',
+                'level' => 5,
+                'experience_points' => 415,
+                'stars' => 25,
+                'coins' => 185,
+                'favorite_game' => 'Caca Letras',
+            ],
+        ],
+        'games' => [
+            [
+                'id' => 1,
+                'slug' => 'alphabet',
+                'title' => 'Caca Letras',
+                'category' => 'Alfabetizacao',
+                'description' => 'Reconhecimento de letras, silabas e sons com feedback visual alegre.',
+                'difficulty' => 'easy',
+                'minimum_age' => 4,
+                'maximum_age' => 7,
+                'premium' => false,
+                'plays' => 142,
+                'badge_color' => 'sun',
+            ],
+            [
+                'id' => 2,
+                'slug' => 'memory',
+                'title' => 'Memoria Infantil',
+                'category' => 'Memoria',
+                'description' => 'Desafios com cartas coloridas e progressao gradual por fase.',
+                'difficulty' => 'medium',
+                'minimum_age' => 4,
+                'maximum_age' => 8,
+                'premium' => false,
+                'plays' => 96,
+                'badge_color' => 'mint',
+            ],
+            [
+                'id' => 3,
+                'slug' => 'dragdrop',
+                'title' => 'Arraste e Solte',
+                'category' => 'Coordenacao',
+                'description' => 'Atividades de coordenacao motora com objetos grandes e interativos.',
+                'difficulty' => 'easy',
+                'minimum_age' => 2,
+                'maximum_age' => 5,
+                'premium' => true,
+                'plays' => 54,
+                'badge_color' => 'coral',
+            ],
+        ],
+        'plans' => [
+            [
+                'name' => 'Free',
+                'price' => 'R$ 0',
+                'description' => 'Acesso a uma trilha introdutoria com 1 perfil infantil.',
+            ],
+            [
+                'name' => 'Premium',
+                'price' => 'R$ 29,90',
+                'description' => 'Todos os jogos, relatorios e recompensas especiais.',
+            ],
+            [
+                'name' => 'Familia',
+                'price' => 'R$ 49,90',
+                'description' => 'Acesso completo para ate 4 criancas da mesma familia.',
+            ],
+        ],
+    ],
+];

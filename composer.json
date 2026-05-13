@@ -1,0 +1,29 @@
+{
+    "name": "kids-platform/kids-platform",
+    "description": "Plataforma educacional infantil gamificada",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kids Platform Team",
+            "email": "team@kids.local"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "firebase/php-jwt": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "audit": {
+            "ignore": ["PKSA-y2cr-5h3j-g3ys", "PKSA-2kqm-ps5x-s4f5"]
+        }
+    }
+}
