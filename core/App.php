@@ -44,8 +44,10 @@ final class App
         $this->router->get('/children', [DashboardController::class, 'children']);
         $this->router->post('/children', [DashboardController::class, 'storeChild']);
         $this->router->get('/games', [DashboardController::class, 'games']);
+        $this->router->get('/game', [DashboardController::class, 'games']);
         $this->router->get('/games/alphabet', [DashboardController::class, 'playAlphabet']);
         $this->router->get('/games/{slug}', [DashboardController::class, 'playGame']);
+        $this->router->get('/game/{slug}', [DashboardController::class, 'playGame']);
         $this->router->get('/admin', [DashboardController::class, 'admin']);
 
         $this->router->get('/api/v1/health', [ApiController::class, 'health']);

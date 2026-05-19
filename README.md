@@ -24,6 +24,33 @@ kids/
 └── public/
 ```
 
+## 🚀 Servidor de Desenvolvimento (Recomendado)
+
+Devido a limitações do servidor PHP embutido com roteamento, usamos um servidor proxy Python:
+
+```bash
+# Instalar dependências (se necessário)
+composer install
+
+# Iniciar servidor
+python server.py
+```
+
+Acesse: http://localhost:8080
+
+### Credenciais de Teste
+
+- **Email**: parent@kids.local
+- **Senha**: 123456
+
+### Páginas Disponíveis
+
+- **Login**: `/login`
+- **Dashboard**: `/dashboard`
+- **Jogos**: `/games`
+- **Jogo do Alfabeto**: `/games/alphabet`
+- **Crianças**: `/children`
+
 ## Rodar localmente
 
 ### Opcao 1: servidor embutido do PHP

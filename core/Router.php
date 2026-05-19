@@ -30,11 +30,6 @@ final class Router
             $action = $this->findRouteWithParams($method, $path);
         }
 
-        // Se não encontrou correspondência exata, tentar encontrar rota com parâmetros
-        if ($action === null) {
-            $action = $this->findRouteWithParams($method, $path);
-        }
-
         if ($action === null) {
             http_response_code(404);
             echo 'Pagina nao encontrada.';

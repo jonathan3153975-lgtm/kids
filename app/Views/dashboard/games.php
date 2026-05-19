@@ -25,6 +25,13 @@
                         <span><?= e((string) $game['minimum_age']) ?>-<?= e((string) $game['maximum_age']) ?> anos</span>
                         <span><?= e((string) $game['plays']) ?> partidas</span>
                     </div>
+                    <div class="mt-4">
+                        <?php if (!empty($game['slug'])): ?>
+                            <a href="<?= e(app_url('games/' . $game['slug'])) ?>" class="btn btn-bubble btn-bubble-primary w-100">Jogar agora</a>
+                        <?php else: ?>
+                            <button class="btn btn-bubble btn-bubble-secondary w-100" disabled>Em breve</button>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </article>
         </div>
